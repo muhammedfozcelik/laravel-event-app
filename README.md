@@ -11,8 +11,6 @@ Bu proje, kullanıcıların etkinlik oluşturabileceği, düzenleyebileceği, si
 -   **Kategori Sistemi:**
     -   Etkinlikler kategorilere ayrılmıştır.
     -   URL dostu (slug) yapı ile kategori bazlı filtreleme yapılabilir (Örn: `/categories/teknoloji`).
--   **[BONUS] Kategori Yönetimi:**
-    -   Yönetim paneline ihtiyaç duymadan, arayüz üzerinden dinamik olarak yeni kategori ekleme, düzenleme ve silme özellikleri geliştirilmiştir.
 -   **Validasyon ve Güvenlik:**
     -   Geçmiş tarihli etkinlik oluşturulması hem arayüzde (datepicker kısıtlaması) hem de Backend tarafında (`after:now` kuralı) engellenmiştir.
     -   Tüm form işlemlerinde CSRF koruması mevcuttur.
