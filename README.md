@@ -71,8 +71,4 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
     ```
     Tarayıcıda şu adrese gidin: `http://localhost:8000`
 
-## ℹ️ Teknik Notlar ve Kod Kalitesi
 
--   **Performans:** Veritabanı sorgularında N+1 problemini önlemek için Controller tarafında **Eager Loading** (`with(['category', 'user'])`) yöntemi kullanılmıştır.
--   **Rota Yapısı:** `web.php` dosyasında rotalar `auth` middleware grubu altında düzenlenmiş, çakışmaları önlemek için statik rotalar dinamik rotaların üzerine alınmıştır.
--   **Veri Bütünlüğü:** Veritabanı seviyesinde `onDelete('cascade')` kullanılarak, bir kullanıcı veya kategori silindiğinde ilişkili verilerin de temizlenmesi sağlanmıştır.
